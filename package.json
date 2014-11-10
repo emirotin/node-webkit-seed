@@ -2,7 +2,7 @@
   "name": "node-webkit-seed",
   "version": "0.0.1",
   "description": "Node-webkit seed with CofeeScript, LESS, Bootstrap, Livereload",
-  "main": "index.html",
+  "main": "app/index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodewebkit"
@@ -11,5 +11,8 @@
   "license": "MIT",
   "devDependencies": {
     "nodewebkit": "^0.10.5"
+  },
+  "dependencies": {
+    "coffee-script": "^1.8.0"
   }
 }

@@ -1,6 +1,6 @@
-* index.js + coffeescript
 * bower + bootstrap
 * less + autobuild + autoreload
 * ember
+* emblem
 * dummy project
-* autobuild
+* build automation
