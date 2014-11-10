@@ -4,8 +4,12 @@
   "description": "Node-webkit seed with CofeeScript, LESS, Bootstrap, Livereload",
   "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodewebkit"
   },
   "author": "Eugene Mirotin <emirotin@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "nodewebkit": "^0.10.5"
+  }
 }
