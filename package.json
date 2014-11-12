@@ -5,11 +5,13 @@
   "main": "app/index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodewebkit"
+    "start": "nodewebkit",
+    "bower": "bower"
   },
   "author": "Eugene Mirotin <emirotin@gmail.com>",
   "license": "MIT",
   "devDependencies": {
+    "bower": "^1.3.12",
     "nodewebkit": "^0.10.5"
   },
   "dependencies": {

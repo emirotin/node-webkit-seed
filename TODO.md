@@ -1,4 +1,3 @@
-* bower + bootstrap
 * less + autobuild [https://www.npmjs.org/package/run-sequence] + autoreload
 * ember
 * emblem [https://github.com/phvcky/gulp-emblem]
