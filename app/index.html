@@ -5,6 +5,46 @@
 	</head>
 	<body>
 		<h1>Hello World!</h1>
+
+		<script>
+			(function() {
+				if (!process.env.NW_DEBUG) {
+					return;
+				}
+
+				var gulp = require('gulp');
+
+				function addV(url) {
+					var i = url.indexOf('?v=');
+					if (i >= 0) {
+						url = url.substring(0, i);
+					}
+					return url + '?v=' + Date.now();
+				}
+
+				gulp.task('reload', function () {
+					if (typeof location == 'undefined') {
+						return;
+					}
+					location.href = addV(location.href);
+				});
+
+				gulp.task('restyle', function () {
+					var i,
+						styles = document.querySelectorAll('link[rel=stylesheet]');
+
+					for (i = 0; i < styles.length; i++) {
+						styles[i].setAttribute('href', addV(styles[i].getAttribute('href')));
+					};
+				});
+
+				gulp.watch(['app/**/*.html', 'app/**/*.js', 'app/**/*.coffee'], ['reload']);
+				gulp.watch(['app/**/*.css'], ['restyle']);
+
+			}());
+		</script>
+
 		<script src="index.js"></script>
+
 	</body>
 </html>
