@@ -1,2 +1,2 @@
-require('coffee-script/register');
-require('./src/index');
+window.alert('ok1');
+require('./src/required');
