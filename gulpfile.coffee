@@ -19,3 +19,6 @@ gulp.task 'styles', ->
 		})
 		.on 'error', printError
 		.pipe gulp.dest 'app'
+
+gulp.task 'watch', ->
+	gulp.watch 'app/**/*.less', [ 'styles' ]
