@@ -6,12 +6,16 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodewebkit",
-    "bower": "bower"
+    "bower": "bower",
+    "gulp": "gulp"
   },
   "author": "Eugene Mirotin <emirotin@gmail.com>",
   "license": "MIT",
   "devDependencies": {
     "bower": "^1.3.12",
+    "gulp": "^3.8.10",
+    "gulp-less": "^1.3.6",
+    "gulp-util": "^3.0.1",
     "nodewebkit": "^0.10.5"
   },
   "dependencies": {
